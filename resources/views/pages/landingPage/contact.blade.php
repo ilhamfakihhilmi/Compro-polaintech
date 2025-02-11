@@ -117,7 +117,7 @@
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.73288726252702!2d107.42934751721461!3d-6.556208421627958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690ef84b459347%3A0x947728adb9c766ed!2sCCVH%2BFQ2%2C%20Jl.%20Pramuka%2C%20Bunder%2C%20Kec.%20Purwakarta%2C%20Kabupaten%20Purwakarta%2C%20Jawa%20Barat%2041161!5e0!3m2!1sid!2sid!4v1697696626779!5m2!1sid!2sid"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1030.342254674736!2d106.79893010160119!3d-6.305759192717048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1739272285708!5m2!1sid!2sid"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>

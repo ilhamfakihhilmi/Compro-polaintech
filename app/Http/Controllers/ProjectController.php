@@ -54,6 +54,8 @@ class ProjectController extends Controller
             'title' => 'required|string|max:255',
             // 'description' => 'required|max:255',
             'file' => 'required',
+            'project_name' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
         ]);
 
         try {
@@ -72,6 +74,8 @@ class ProjectController extends Controller
                 'title' => $request->title,
                 // 'description' => $request->description,
                 'file' => $pathPublic,
+                'project_name' => $request->project_name,
+                'description' => $request->description,
             ]);
 
             //echo $service;
@@ -96,6 +100,8 @@ class ProjectController extends Controller
             'title' => 'required|string|max:255',
             // 'description' => 'required|max:255',
             'file' => '',
+            'project_name' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
         ]);
 
         try {
@@ -118,6 +124,8 @@ class ProjectController extends Controller
                 'title' => $request->title,
                 // 'description' => $request->description,
                 'file' => $pathPublic2,
+                'project_name' => $request->project_name,
+                'description' => $request->description,
             ]);
             return redirect()->route('admin.project.index')->with('success', 'Project updated successfully');
         } catch (\Throwable $th) {
@@ -137,7 +145,6 @@ class ProjectController extends Controller
             File::delete($data->file);
 
             return redirect()->route('admin.project.index')->with('success', 'Project deleted successfully');
-
         } catch (\Throwable $th) {
             return back()->with(['error' => 'Data gagal dihapus.']);
         }

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Data Project</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Data Project</span></h4>
 
     <a href="{{ route('admin.project.create') }}" type="button" class="btn btn-primary mb-3 ">
         <span class="tf-icons bx bx-plus-circle"></span>&nbsp; Tambah
@@ -21,7 +21,8 @@
                         <tr>
                             <th width="5%">No</th>
                             <th>Title</th>
-                            {{-- <th>Description</th> --}}
+                            <th>Project Name</th>
+                            <th>Project Description</th>
                             <th>Picture</th>
                             <th width="10%">Action</th>
                         </tr>
@@ -49,35 +50,49 @@
 
     <script type="text/javascript">
         $(function() {
-
             var table = $('.data-table').DataTable({
                 processing: true,
                 serverSide: true,
                 ajax: "{{ route('admin.project.index') }}",
                 columns: [{
                         data: 'DT_RowIndex'
-                    }, {
+                    },
+                    {
                         data: 'title',
                         name: 'title'
-                    },  {
+                    },
+                    {
+                        data: 'project_name',
+                        name: 'project_name'
+                    },
+                    {
+                        data: 'description',
+                        name: 'description',
+                        render: function(data) {
+                            if (data.length > 40) {
+                                return data.slice(0, 40) + '...';
+                            }
+                            return data;
+                        }
+                    },
+                    {
                         data: 'file',
                         name: 'file',
                         orderable: false,
                         searchable: false
-                    },{
+                    },
+                    {
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         searchable: false
-                    },
+                    }
                 ]
             });
-
         });
 
         // fun delete
         function hapus(uuid) {
-
             var url = '{{ route('admin.project.index') }}/' + uuid;
             $('#delete-form').attr('action', url);
 
@@ -93,8 +108,7 @@
                 if (result.isConfirmed) {
                     $('#delete-form').submit();
                 }
-            })
-
+            });
         }
     </script>
 @endpush

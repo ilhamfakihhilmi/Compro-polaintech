@@ -380,11 +380,12 @@
                                                 class="far fa-calendar-alt text-primary me-2"></i>{{ $x->date }}</small>
                                     </div>
                                     <h4 class="mb-3">{{ $x->project_name }}</h4>
-                                    <p>{{ $x->description }}</p>
-                                    {{-- <a class="text-uppercase" href="">Read More
+                                    <p>{{ Str::limit($x->description, 70) }}</p>
+                                    <a class="text-uppercase" href="">Selengkapnya
                                         <i class="bi bi-arrow-right"></i>
-                                    </a> --}}
+                                    </a>
                                 </div>
+
                             </div>
                         </div>
                     @endforeach
