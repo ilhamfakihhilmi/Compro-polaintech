@@ -98,7 +98,7 @@
         <div class="row justify-content-end">
             <div class="col-lg-8 col-md-6">
                 <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                    <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">Gen-Z Company</a>, All
+                    <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">Komunitas Pondok Labu</a>, All
                         Right Reserved.
                     </p>
                 </div>
