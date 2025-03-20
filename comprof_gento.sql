@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 06, 2025 at 04:15 PM
+-- Generation Time: Mar 20, 2025 at 04:14 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.10
 
@@ -78,7 +78,7 @@ CREATE TABLE `carousels` (
 --
 
 INSERT INTO `carousels` (`id`, `title`, `subtitle`, `file`, `created_at`, `updated_at`) VALUES
-(1, 'TEKNOLOGI MASA DEPAN', 'Mendorong Inovasi Digital', 'file/carousel/1740760209-2614.jpg', '2025-02-28 16:28:02', '2025-02-28 16:30:09'),
+(1, 'TEKNOLOGI MASA DEPAN', 'Mendorong Inovasi Digital', 'file/carousel/1740760209-2614.jpg', '2025-02-28 16:28:02', '2025-03-19 03:44:21'),
 (2, 'EKOSISTEM DIGITAL', 'Kolaborasi untuk Pertumbuhan', 'file/carousel/1740760219-2151252419.jpg', '2025-02-28 16:28:02', '2025-02-28 16:30:19');
 
 -- --------------------------------------------------------
